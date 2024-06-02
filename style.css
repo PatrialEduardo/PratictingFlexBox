@@ -1,0 +1,194 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Sono", sans-serif;
+  }
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (min-width: 600px) {
+    .pricing-plan{
+      display: inline-block;
+      background-color: lightgray;
+      flex-direction: row;
+      padding: 20px;
+      flex-basis: 200px;
+      border-radius: 20px;
+  }
+
+  #basic{
+    box-shadow: -5px 5px 10px 0px gray;
+    transition: 500ms;
+  }
+  #Standard{
+    box-shadow: 0px 5px 10px 0px gray;
+    transition: 500ms;
+  }
+  #Premium{
+    box-shadow: 5px 5px 10px 0px gray;
+    transition: 500ms;
+  }
+
+  #basic:hover{
+    transform: scale(1.05);
+  }
+  #Standard:hover{
+    transform: scale(1.05);
+  }
+  #Premium:hover{
+    transform: scale(1.05);
+  }
+
+  .pricing-container{
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .plan-title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan-price{
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan-features > li{
+    display: flex;
+    list-style: none;
+  }
+
+  .plan-features{
+    padding-left: 0;
+  }
+
+  .plan-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 255, 41);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: gray solid 0.2px;
+    transition: 300ms;
+  }
+
+  #left:hover{
+    transform: scale(1.05);
+
+    background-color: rgb(123, 255, 118);
+    box-shadow: -1px 1px 0px 0px rgb(54, 54, 54);
+    cursor: pointer;
+  }
+  #center:hover{
+    transform: scale(1.05);
+
+    background-color: rgb(123, 255, 118);
+    box-shadow: 0px 1px 0px 0px rgb(54, 54, 54);
+    cursor: pointer;
+  }
+  #right:hover{
+    transform: scale(1.05);
+
+    background-color: rgb(123, 255, 118);
+    box-shadow: 1px 1px 0px 0px rgb(54, 54, 54);
+    cursor: pointer;
+  }
+
+  .pricing-plan > div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  }
+
+@media (max-width: 599px) {
+  body{
+    background-color: whitesmoke;
+  }
+
+  .pricing-plan{
+      display: inline-block;
+      background-color: lightgray;
+      padding: 20px;
+      flex-basis: 200px;
+      border-radius: 20px;
+      box-shadow: 0px 5px 10px 0px gray;
+      transition: 500ms;
+  }
+  #basic{
+    margin-top: 20px;
+  }
+
+  #basic:hover{
+    transform: scale(1.05);
+  }
+  #Standard:hover{
+    transform: scale(1.05);
+  }
+  #Premium:hover{
+    transform: scale(1.05);
+  }
+
+  .pricing-container{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: transparent;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 20px;
+  }
+
+  .plan-title{
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan-price{
+    display: flex;
+    justify-content: center;
+  }
+
+  .plan-features > li{
+    display: flex;
+    list-style: none;
+  }
+
+  .plan-features{
+    padding-left: 0;
+  }
+
+  .plan-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(48, 255, 41);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: gray solid 0.2px;
+    transition: 300ms;
+  }
+
+  .plan-button:hover{
+    transform: scale(1.05);
+
+    background-color: rgb(123, 255, 118);
+    box-shadow: 0px 1px 0px 0px rgb(54, 54, 54);
+    cursor: pointer;
+  }
+  
+  .pricing-plan > div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
